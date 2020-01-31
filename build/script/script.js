@@ -18,7 +18,11 @@ xhttpSlide.onreadystatechange = function () {
     }
 };
 
+<<<<<<< HEAD
 xhttpSlide.open("POST", "http://open-media-task-master/script/feedback_data.json", true);
+=======
+xhttpSlide.open("POST", "http://test-open-media.mike/script/feedback_data.json", true);
+>>>>>>> e30d455c458c85568ea4685b6144c2fb6adcb691
 xhttpSlide.send();
 
 function myFunctionSlide(data) {
@@ -76,7 +80,11 @@ xhttp.onreadystatechange = function () {
     }
 };
 
+<<<<<<< HEAD
 xhttp.open("POST", "http://open-media-task-master/script/blog_posts.json", true);
+=======
+xhttp.open("POST", "http://test-open-media.mike/script/blog_posts.json", true);
+>>>>>>> e30d455c458c85568ea4685b6144c2fb6adcb691
 xhttp.send();
 
 function myFunction(data) {
