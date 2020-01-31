@@ -1,0 +1,300 @@
+@font-face {
+    font-family: 'Proxima Nova Semi';
+    src: url(../fonts/ProximaNova-Semibold.eot);
+    src: url(../fonts/ProximaNova-Semibold.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/ProximaNova-Semibold.woff2) format('woff2'),
+        url(../fonts/ProximaNova-Semibold.woff) format('woff'),
+        url(../fonts/ProximaNova-Semibold.ttf) format('truetype'),
+        url(../fonts/ProximaNova-Semibold.svg#ProximaNova-Semibold) format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Lt';
+    src: url(../fonts/ProximaNova-Light.eot);
+    src: url(../fonts/ProximaNova-Light.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/ProximaNova-Light.woff2) format('woff2'),
+        url(../fonts/ProximaNova-Light.woff) format('woff'),
+        url(../fonts/ProximaNova-Light.ttf) format('truetype'),
+        url(../fonts/ProximaNova-Light.svg#ProximaNova-Light) format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url(../fonts/ProximaNova-Regular.eot);
+    src: url(../fonts/ProximaNova-Regular.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/ProximaNova-Regular.woff2) format('woff2'),
+        url(../fonts/ProximaNova-Regular.woff) format('woff'),
+        url(../fonts/ProximaNova-Regular.ttf) format('truetype'),
+        url(../fonts/ProximaNova-Regular.svg#ProximaNova-Regular) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+button,  button:active,  button:focus {
+    outline: none;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+body{
+    width: 100%;
+}
+
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+    background: #E5E5E5;
+    padding: 12px 0 60px 0;
+}
+.slider{
+    height: 700px;
+    background: #6527D9;
+    border-radius: 12px;
+    position: relative;
+    margin: 0px 12px 0 12px;
+}
+.ellips{
+    position: absolute;
+    width: 388px;
+    height: 388px;
+    right: 0;
+    top: 0;
+    background: -webkit-linear-gradient(48.37deg, #FFFFFF 8.13%, rgba(255, 255, 255, 0) 84.6%);
+    background: linear-gradient(41.63deg, #FFFFFF 8.13%, rgba(255, 255, 255, 0) 84.6%);
+    opacity: 0.1;
+    border-radius: 388px;
+}
+nav{
+    position: absolute;
+    bottom: 20%;
+    right: 5.65%;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: nowrap;
+}
+button{
+    border: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 32px;
+    background: rgba(255,255,255, 0.2);
+    box-shadow: 0px 1px 5px rgba(99, 114, 130, 0.15), 0px 0px 0px #E6E6E6, 0px 1px 1px rgba(0, 0, 0, 0.08);
+}
+button:hover > svg{
+    cursor: pointer;
+    opacity: 1;
+}
+button:active{
+    border: 1px solid #581CB1;
+}
+button svg{
+    opacity: 0.3;
+}
+.prev svg{
+    transform: rotate(-180deg);
+}
+.prev{
+    margin-right: 20px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.prev img{
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+.next{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    z-index: 3;
+}
+.next img{
+   -webkit-transform: skew(1.2);
+   transform: skew(1.2);
+   z-index: 100;
+}
+h2{
+    margin-top: 80px;
+    font-family: Proxima Nova Rg;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 120%;    
+    text-align: center;
+    letter-spacing: 0.2px;    
+    color: #262626;
+    margin-bottom: 92px;
+        background: #E5E5E5;
+}
+
+.post{
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+}
+
+.post-block{
+    background: #fff;
+    padding: 12px 12px 0 12px;
+    border-radius: 12px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    width: calc(100% / 3 - 16px);
+    margin-right: 12px;
+    box-sizing: border-box;
+    position: relative;
+    text-decoration: none;
+    margin-bottom: 12px;
+}
+.post-block:hover{
+    cursor: pointer;
+    -webkit-transform: scale(1.04);
+    transform: scale(1.04);
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.post-block p{
+    text-align: center;
+    padding: 20px 20px 40px 20px;
+    color: #262626;
+    font-family: Proxima Nova Lt;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 130%;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.post-block:nth-child(3n+1){
+    margin-left: 12px;
+}
+.load-post{
+    margin: 0 auto;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.load-post p{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: baseline;
+    align-items: baseline;
+    color: #6527D9;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: Proxima Nova Rg;
+}
+
+.load-post p::after{
+    content: "";
+    background: url(../../image/icon/down.png);
+    width: 14px;
+    height: 9px;
+    display: -webkit-box;
+    display: flex;
+    margin-left: 8px;
+}
+.load-post:hover{
+    cursor: pointer;
+}
+.load-post p:hover{
+    color: #581CB1;    
+}
+.load-post p:hover:after{
+    -webkit-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);   
+}
+
+.reviews-slide{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    position: absolute;
+    top: 14.29%;
+    left: 5.65%;
+    width: 88.7%;
+    justify-content: space-around;
+}
+
+.reviews-slide-text{
+    font-family: Proxima Nova Rg;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 120%;
+    letter-spacing: 0.8px;  
+    color: #FFFFFF;
+    margin-right: 34.39%;
+    margin-bottom: 32px;
+}
+
+.reviews-slide-name{
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+.reviews-slide-inst{
+    font-family: Proxima Nova Lt;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    padding-left: 7px;
+}
+.review-slide-name-inst{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: baseline;
+    align-items: baseline;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+}
