@@ -1,0 +1,126 @@
+@media (max-width: 1310px) {
+    .reviews-slide-text{
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .reviews-slide-text{
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 920px) {
+    .reviews-slide-text{
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 768px) {
+    .reviews-slide-text{
+        font-size: 25px;
+    }
+    .post-block p{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 642px) {
+    .post-block{
+        width: 100%;
+        margin: 0px 12px 8px 12px;
+    }
+     .post-block div{
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+        -webkit-box-align: center;
+        align-items: center;
+    } 
+    h2{
+        margin-bottom: 25px;
+        margin-top: 25px;
+        font-size: 24px;
+        line-height: 130%;
+        letter-spacing: 0.2;
+    }
+    .post{
+        margin-bottom: 24px;
+    }
+    .post-block p{
+        font-size: 18px;
+    }
+    main{
+        padding-bottom: 40px;
+    }
+    .slider{
+        padding: 20px 16px 0 16px;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+        height: 90vh;
+    }
+    .load-post p{
+        font-size: 18px;
+        line-height: 120%;
+        opacity: 0.8;
+    }
+    .reviews-slide{
+        position: static;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 90%;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+        max-height: 90vh;
+    }
+    .reviews-slide-text{
+        margin: 0;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 130%;
+        letter-spacing: 0.2px;
+        font-family: Proxima Nova Lt;
+        text-align: center;
+        -webkit-box-flex: 1;
+        flex-grow: 1;
+    }
+    .review-slide-name-inst{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+        -webkit-box-align: start;
+        align-items: flex-start;
+        margin-bottom: 16px;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+    }
+    .reviews-slide-name{
+        font-weight: 600;
+        font-size: 16px;
+        letter-spacing: 0.2px;
+        margin-bottom: 5px;
+    }
+    .reviews-slide-inst{
+        font-weight: 300;
+        font-size: 16px;
+        letter-spacing: 0.2px;
+        padding-left: 0;
+    }
+
+    .ellips{
+        display: none;
+    }
+    nav{
+        position: static;
+        padding-bottom: 16px;
+    }
+}
